@@ -1,12 +1,14 @@
 <div class="login-box">
-  <h1>Login</h1>
+  <h1>Login</h1>{{successfull}}
   <div class="textbox">
     <i class="fa fa-user-circle" aria-hidden="true"></i>
-    <input type="text" placeholder="Username" name="" value="">
+    <input type="text" placeholder="Username" name="" value="" [(ngModel)]="username">
   </div>
   <div class="textbox">
     <i class="fa fa-unlock" aria-hidden="true"></i>
-    <input type="password" placeholder="Password" name="" value="">
+    <input type="password" placeholder="Password" name="" value="" [(ngModel)]="password">
   </div>
-  <button class="btn" type="button" name="" value="Sign in">Sign In</button>
+  <button class="btn" type="button" name="" value="Sign in" (click)="login()">Sign In</button>
+  <button class="btn" type="button" name="" value="Forget Password" (click)="login()">Forgot Password</button>
+  <button class="btn" type="button" name="" value="Forget Username" (click)="login()">Forgot Username</button>
 </div>
