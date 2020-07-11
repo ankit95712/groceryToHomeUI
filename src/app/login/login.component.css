@@ -22,10 +22,11 @@
   border-bottom: 1px solid #4caf50;
 }
 input {
-    width: 90%;
+    width: 89%;
     height: 25px;
     background: none;
     border: 0;
+    margin-left: 5px;
 }
 button {
     width: 100%;
@@ -33,4 +34,5 @@ button {
     border: 0;
     background: aliceblue;
     border-radius: 25px;
+    margin-bottom: 8px;
 }

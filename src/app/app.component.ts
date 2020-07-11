@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'groceryToHome';
   showLogin = true;
   show(){
-    this.showLogin=!this.showLogin;
+    this.showLogin = !this.showLogin;
 
   }
 
