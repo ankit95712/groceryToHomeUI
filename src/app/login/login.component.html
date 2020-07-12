@@ -12,15 +12,10 @@
   <button class="btn" type="button" name="" value="Forget Password" (click)="forgotPassword()">Forgot Password</button>
 </div>
 
-<div class="login-box" *ngIf="forgotPass">
-  <h1>Forgot Password</h1>
-  <div class="textbox">
-    <i class="fa fa-mobile" aria-hidden="true"></i>
-    <input type="number" placeholder="Phone Number" name="" value="" [(ngModel)]="phoneNumber"/>
-  </div>
-  <button class="btn" type="button" name="" value="Get OTP" (click)="getOtp()">GET OTP</button>
-  <button class="btn" type="button" name="" (click)="goToLogin()">Go to Login</button>
-</div>
+<app-forgot-password *ngIf="forgotPass"
+                     (navigateToLogin)="goToLogin()"
+                     (navigateToOTP)="getOtp()">
+</app-forgot-password>
 
 <div class="login-box" *ngIf="enterOTP">
   <h1>Enter OTP</h1>

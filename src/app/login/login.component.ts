@@ -52,7 +52,8 @@ export class LoginComponent implements OnInit {
       this.successfull = 'input cannot be empty';
     }
   }
-enterNewPass(): void {
+
+  enterNewPass(): void {
     this.enterOTP = false;
     this.enterNewPassword = true;
 
