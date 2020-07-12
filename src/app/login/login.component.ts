@@ -9,10 +9,11 @@ export class LoginComponent implements OnInit {
   username: string;
   password: string;
   successfull: string;
-  forgotPass: boolean = false;
+  forgotPass = false;
   phoneNumber: number;
   enterOTP: boolean;
-
+  enterPassword: string;
+  enterNewPassword: boolean;
 
   constructor() {
   }
@@ -36,6 +37,7 @@ export class LoginComponent implements OnInit {
   goToLogin(): void {
     this.forgotPass = false;
     this.enterOTP = false;
+    this.enterNewPassword = false;
   }
 
 
@@ -50,6 +52,10 @@ export class LoginComponent implements OnInit {
       this.successfull = 'input cannot be empty';
     }
   }
+enterNewPass(): void {
+    this.enterOTP = false;
+    this.enterNewPassword = true;
 
+  }
 
 }
