@@ -1,0 +1,11 @@
+<div class="otp-box" *ngIf="!shouldGoToCreatePassword">
+  <h1>Enter OTP</h1>
+  <div class="textbox">
+    <i class="fa fa-key" aria-hidden="true"></i>
+    <input type="number" placeholder="ENTER OTP" name="" value="" [(ngModel)]="enterOTP"/>
+  </div>
+  <button class="btn" type="button" name="" value="Get OTP" (click)="enterNewPass()">Create Password</button>
+  <button class="btn" type="button" name="" (click)="goToLogin()">Go to Login</button>
+</div>
+
+<app-create-password *ngIf="shouldGoToCreatePassword" (navigateToLogin)="goToLogin()"></app-create-password>

@@ -1,19 +1,18 @@
 import {ChangeDetectionStrategy, Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
-  selector: 'app-forgot-password',
-  templateUrl: './forgot-password.component.html',
-  styleUrls: ['./forgot-password.component.css'],
+  selector: 'app-enter-otp',
+  templateUrl: './enter-otp.component.html',
+  styleUrls: ['./enter-otp.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ForgotPasswordComponent {
+export class EnterOtpComponent {
   @Output() navigateToLogin: EventEmitter<any> = new EventEmitter();
-  enterOTP: boolean;
+  enterOTP: number;
+  shouldGoToCreatePassword: boolean;
 
-  phoneNumber: number;
-
-  getOtp(): void {
-    this.enterOTP = true;
+  enterNewPass() {
+    this.shouldGoToCreatePassword = true;
   }
 
   goToLogin(): void {

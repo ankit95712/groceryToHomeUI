@@ -1,4 +1,4 @@
-<div class="login-box" *ngIf="!forgotPass && !enterOTP && !enterNewPassword">
+<div class="login-box" *ngIf="!forgotPass">
   <h1>Login</h1>
   <div class="textbox">
     <i class="fa fa-user-circle" aria-hidden="true"></i>
@@ -13,39 +13,5 @@
 </div>
 
 <app-forgot-password *ngIf="forgotPass"
-                     (navigateToLogin)="goToLogin()"
-                     (navigateToOTP)="getOtp()">
+                     (navigateToLogin)="goToLogin()">
 </app-forgot-password>
-
-<div class="login-box" *ngIf="enterOTP">
-  <h1>Enter OTP</h1>
-  <div class="textbox">
-    <i class="fa fa-key" aria-hidden="true"></i>
-    <input type="number" placeholder="ENTER OTP" name="" value="" [(ngModel)]="enterOTP"/>
-  </div>
-  <button class="btn" type="button" name="" value="Get OTP" (click)="enterNewPass()">Create Password</button>
-  <button class="btn" type="button" name="" (click)="goToLogin()">Go to Login</button>
-</div>
-
-<div class="login-box" *ngIf="enterNewPassword">
-  <h1>Enter OTP</h1>
-  <div class="textbox">
-    <i class="fa fa-mobile" aria-hidden="true"></i>
-    <input type="number" placeholder="9999999999" name="" value="" disabled/>
-  </div>
-  <div class="textbox">
-    <i class="fa fa-user-circle" aria-hidden="true"></i>
-    <input type="text" placeholder="USERNAME" name="" value="" disabled/>
-  </div>
-  <div class="textbox">
-    <i class="fa fa-key" aria-hidden="true"></i>
-    <input type="password" placeholder="ENTER NEW PASSWORD" name="" value="" />
-  </div>
-  <div class="textbox">
-    <i class="fa fa-key" aria-hidden="true"></i>
-    <input type="password" placeholder="CONFIRM PASSWORD" name="" value="" />
-  </div>
-  <button class="btn" type="button" name="" value="Get OTP" (click)="enterNewPass()">SUBMIT</button>
-  <button class="btn" type="button" name="" (click)="goToLogin()">Go to Login</button>
-</div>
-

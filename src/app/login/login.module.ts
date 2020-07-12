@@ -4,12 +4,16 @@ import {ForgotPasswordComponent} from './forgot-password/forgot-password.compone
 import {LoginComponent} from "./login.component";
 import {BrowserModule} from "@angular/platform-browser";
 import {FormsModule} from "@angular/forms";
+import { EnterOtpComponent } from './enter-otp/enter-otp.component';
+import { CreatePasswordComponent } from './create-password/create-password.component';
 
 
 @NgModule({
   declarations: [
     ForgotPasswordComponent,
-    LoginComponent
+    LoginComponent,
+    EnterOtpComponent,
+    CreatePasswordComponent
   ],
   imports: [
     CommonModule,
