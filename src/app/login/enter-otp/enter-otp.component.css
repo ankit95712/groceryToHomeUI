@@ -15,7 +15,7 @@
   padding: 11px 0;
 }
 
-.textbox {
+.otp-area {
   width: 100%;
   overflow: hidden;
   font-size: 20px;
@@ -25,12 +25,20 @@
 }
 
 input {
-  width: 89%;
+  width: 70%;
   height: 25px;
   background: none;
   border: 0;
   margin-left: 5px;
 }
+
+.resend-OTP {
+  width: 20%;
+  position: absolute;
+  background: none;
+  color: blue;
+}
+
 
 button {
   width: 100%;
