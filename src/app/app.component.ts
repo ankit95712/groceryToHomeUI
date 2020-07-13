@@ -7,10 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'groceryToHome';
-  showLogin = true;
-  show(){
-    this.showLogin = !this.showLogin;
+  showHome = false;
 
+  showHomePage() {
+    this.showHome = true;
   }
-
 }

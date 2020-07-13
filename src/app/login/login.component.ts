@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -6,6 +6,8 @@ import {Component} from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  @Output() goToHome: EventEmitter<any> = new EventEmitter();
+
   username: string;
   password: string;
   successful: string;
@@ -21,7 +23,7 @@ export class LoginComponent {
 
   login(): void {
     if (!!this.username && !!this.password) {
-      this.successful = 'successful login';
+      this.goToHome.emit();
     } else {
       this.successful = 'input cannot be empty';
     }
