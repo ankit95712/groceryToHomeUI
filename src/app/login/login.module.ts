@@ -19,6 +19,9 @@ import { CreatePasswordComponent } from './create-password/create-password.compo
     CommonModule,
     BrowserModule,
     FormsModule
+  ],
+  exports: [
+    LoginComponent
   ]
 })
 export class LoginModule {
