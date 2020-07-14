@@ -10,7 +10,7 @@ export class LoginComponent {
 
   username: string;
   password: string;
-  successful: string;
+  error: string;
   forgotPass = false;
 
   forgotPassword(): void {
@@ -23,9 +23,10 @@ export class LoginComponent {
 
   login(): void {
     if (!!this.username && !!this.password) {
+      this.error = '';
       this.goToHome.emit();
     } else {
-      this.successful = 'input cannot be empty';
+      this.error = 'Username and Password Cannot Be Empty';
     }
   }
 }

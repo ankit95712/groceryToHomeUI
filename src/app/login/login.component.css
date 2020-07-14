@@ -6,6 +6,17 @@
   transform: translate(-50%,-50%);
   color: white;
 }
+
+.login-error{
+  width: 280px;
+  font-size: 12px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: red;
+}
+
 .login-box h1{
   float: left;
   font-size: 40px;
