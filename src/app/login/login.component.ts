@@ -5,7 +5,7 @@ import {Component, EventEmitter, Output} from '@angular/core';
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  providers : [MessageService]
+  providers: [MessageService]
 })
 export class LoginComponent {
   @Output() goToHome: EventEmitter<any> = new EventEmitter();
@@ -14,7 +14,10 @@ export class LoginComponent {
   password: string;
   error: string;
   forgotPass = false;
-constructor(private messageService: MessageService) {}
+
+  constructor(private messageService: MessageService) {
+  }
+
   forgotPassword(): void {
     this.forgotPass = true;
   }
@@ -28,10 +31,7 @@ constructor(private messageService: MessageService) {}
       this.error = '';
       this.goToHome.emit();
     } else {
-
-      this.successful = 'input cannot be empty';
-        this.messageService.add({severity:'error', summary:'Input cannot be empty', detail:'Via MessageService'});
-
+      this.messageService.add({severity: 'error', summary: 'Login Failed', detail: 'Both User name and Password is required'});
     }
   }
 }

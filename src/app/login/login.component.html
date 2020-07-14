@@ -3,7 +3,6 @@
 <img src="assets/localGrocery.jpg" class="login-background-right" width="500" height="600">
 <div class="login-box" *ngIf="!forgotPass">
   <h1>Login</h1>
-  <div class="login-error" *ngIf="error">* {{error}}</div>
   <div class="textbox">
     <i class="fa fa-user-circle" aria-hidden="true"></i>
     <input type="text" placeholder="Username / Phone Number" name="" value="" [(ngModel)]="username"/>
@@ -21,5 +20,5 @@
                      (navigateToLogin)="goToLogin()">
 </app-forgot-password>
 
-<p-toast position="top-left"></p-toast>
+<p-toast position="top-right"></p-toast>
 
