@@ -1,3 +1,5 @@
+import {ToastModule} from 'primeng/toast';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {ForgotPasswordComponent} from './forgot-password/forgot-password.component';
@@ -18,7 +20,9 @@ import { CreatePasswordComponent } from './create-password/create-password.compo
   imports: [
     CommonModule,
     BrowserModule,
-    FormsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ToastModule
   ],
   exports: [
     LoginComponent
