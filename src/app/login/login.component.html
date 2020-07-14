@@ -1,3 +1,6 @@
+<img src="assets/grocery.jpg" class="login-background-left" width="500" height="600">
+<img src="assets/logo.jpg" class="login-background-logo" width="500" height="600">
+<img src="assets/localGrocery.jpg" class="login-background-right" width="500" height="600">
 <div class="login-box" *ngIf="!forgotPass">
   <h1>Login</h1>
   <div class="login-error" *ngIf="error">* {{error}}</div>
@@ -12,6 +15,7 @@
   <button class="btn" type="button" name="" value="Sign in" (click)="login()">Sign In</button>
   <button class="btn" type="button" name="" value="Forget Password" (click)="forgotPassword()">Forgot Password</button>
 </div>
+
 
 <app-forgot-password *ngIf="forgotPass"
                      (navigateToLogin)="goToLogin()">
