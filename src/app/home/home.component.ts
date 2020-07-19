@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
       },
       {
         label: 'About Us',
-        icon: 'pi pi-fw pi-pencil',
+        icon: 'fa fa-info-circle',
         items: [
           {label: 'Delete', icon: 'pi pi-fw pi-trash'},
           {label: 'Refresh', icon: 'pi pi-fw pi-refresh'},
@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
       },
       {
         label: 'Products',
-        icon: 'pi pi-fw pi-list',
+        icon: 'fa fa-product-hunt',
         items: [
           {label: 'Vegetables', icon: 'pi pi-fw pi-trash'},
           {label: 'Snacks', icon: 'pi pi-fw pi-refresh'},
@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
       },
       {
         label: 'Services',
-        icon: 'pi pi-fw pi-list',
+        icon: 'fa fa-cogs',
         items: [
           {label: 'Vegetables', icon: 'pi pi-fw pi-trash'},
           {label: 'Snacks', icon: 'pi pi-fw pi-refresh'},
@@ -67,7 +67,7 @@ export class HomeComponent implements OnInit {
       },
       {
         label: 'Feedback',
-        icon: 'pi pi-fw pi-list',
+        icon: 'fa fa-comments',
         items: [
           {label: 'Vegetables', icon: 'pi pi-fw pi-trash'},
           {label: 'Snacks', icon: 'pi pi-fw pi-refresh'},
@@ -80,7 +80,7 @@ export class HomeComponent implements OnInit {
       },
       {
         label: 'Contact Us',
-        icon: 'pi pi-fw pi-list',
+        icon: 'fa fa-address-card',
         items: [
           {label: 'Vegetables', icon: 'pi pi-fw pi-trash'},
           {label: 'Snacks', icon: 'pi pi-fw pi-refresh'},
