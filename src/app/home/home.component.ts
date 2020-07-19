@@ -22,8 +22,8 @@ export class HomeComponent implements OnInit {
           label: 'New',
           icon: 'pi pi-fw pi-plus',
           items: [
-            {label: 'Project'},
-            {label: 'Other'},
+            {label: 'Project', url: 'http://www.primefaces.org/primeng'},
+            {label: 'Other', url: 'login'},
           ]
         },
           {label: 'Open'},
