@@ -1,0 +1,60 @@
+.menu-bar {
+  display: flex;
+  background: yellowgreen;
+  justify-content: space-between;
+
+  .header {
+    color: #f2f2f2;
+    font-size: 33px;
+    line-height: 70px;
+    padding: 0 140px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+::ng-deep .header-menu {
+  .ui-menubar {
+    height: 70px;
+    background: yellowgreen;
+    border: none;
+    border-radius: 0;
+    color: #f2f2f2;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px 13px;
+    font-family: 'Poppins', sans-serif;
+
+    .ui-submenu-list {
+      background: yellowgreen;
+    }
+
+    .ui-menubar .ui-menuitem-link &:hover {
+      background: red;
+    }
+
+    .ui-menubar-root-list {
+      .ui-menuitem .ui-corner-all .ui-menu-parent {
+        .ui-menuitem-link .ui-corner-all {
+          &:hover {
+            background: red;
+          }
+        }
+      }
+    }
+  }
+
+  .ui-menubar .ui-menuitem-link .ui-menuitem-icon {
+    color: white;
+  }
+
+  .ui-menubar .ui-menuitem-link {
+    .ui-menuitem-text {
+      color: white;
+    }
+
+    .ui-submenu-icon {
+      color: white;
+    }
+  }
+}

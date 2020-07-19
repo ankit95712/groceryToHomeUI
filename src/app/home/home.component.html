@@ -1,33 +1,4 @@
-<p-menubar [model]="items"></p-menubar>
-<nav>
-  <input type="checkbox" id="check">
-  <label for="check" class="checkbtn">
-    <i class="fas fa-bars"></i>
-  </label>
-  <label class="logo">Grocery</label>
-
-  <ul>
-    <li><a class="active" href="#">Home</a></li>
-    <li><a href="#">About Us</a></li>
-    <li><a href="#">Products</a></li>
-    <li class="services"><a href="#">Services</a>
-    <div class="sub-menu-1">
-      <ul>
-        <li><a href ="#">Vegetables</a></li>
-        <li><a href ="#">Snacks</a></li>
-        <li><a href ="#">Gourmet</a></li>
-        <li><a href ="#">Dairy</a></li>
-        <li><a href ="#">Beverages</a></li>
-      </ul>
-    </div>
-    </li>
-
-    <li><a href="#">Contact Us</a></li>
-    <li><a href="#">Feedback</a></li>
-  </ul>
-
-</nav>
-<section></section>
-
-
-
+<div class="menu-bar">
+  <div class="header">Grocery</div>
+  <p-menubar [model]="items" class="header-menu"></p-menubar>
+</div>
