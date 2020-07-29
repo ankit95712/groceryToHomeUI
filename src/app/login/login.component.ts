@@ -1,5 +1,6 @@
 import {MessageService} from 'primeng/api';
 import {Component, EventEmitter, Output} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,8 @@ export class LoginComponent {
   error: string;
   forgotPass = false;
 
-  constructor(private messageService: MessageService) {
+  constructor(private messageService: MessageService,
+              private router: Router ) {
   }
 
   forgotPassword(): void {
@@ -29,7 +31,7 @@ export class LoginComponent {
   login(): void {
     if (!!this.username && !!this.password) {
       this.error = '';
-      this.goToHome.emit();
+      this.router.navigate(["/home", {}]);
     } else {
       this.messageService.add({severity: 'error', summary: 'Login Failed', detail: 'Both User name and Password is required'});
     }
