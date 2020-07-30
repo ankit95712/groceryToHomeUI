@@ -31,14 +31,6 @@ export class HomeComponent implements OnInit {
         ]
       },
       {
-        label: 'About Us',
-        icon: 'fa fa-info-circle',
-        items: [
-          {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-          {label: 'Refresh', icon: 'pi pi-fw pi-refresh'},
-        ]
-      },
-      {
         label: 'Products',
         icon: 'fa fa-product-hunt',
         items: [
@@ -66,29 +58,14 @@ export class HomeComponent implements OnInit {
         ]
       },
       {
-        label: 'Feedback',
-        icon: 'fa fa-comments',
+        label: 'About Us',
+        icon: 'fa fa-info-circle',
         items: [
-          {label: 'Vegetables', icon: 'pi pi-fw pi-trash'},
-          {label: 'Snacks', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Gourmet', icon: 'pi pi-fw pi-trash'},
-          {label: 'Dairy', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Fruits', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Beverages', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Branded items', icon: 'pi pi-fw pi-refresh'},
-        ]
-      },
-      {
-        label: 'Contact Us',
-        icon: 'fa fa-address-card',
-        items: [
-          {label: 'Vegetables', icon: 'pi pi-fw pi-trash'},
-          {label: 'Snacks', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Gourmet', icon: 'pi pi-fw pi-trash'},
-          {label: 'Dairy', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Fruits', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Beverages', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Branded items', icon: 'pi pi-fw pi-refresh'},
+          {label: 'About', icon: 'pi pi-fw pi-trash'},
+          {label: 'Contact', icon: 'pi pi-fw pi-refresh'},
+          {label: 'Complains', icon: 'pi pi-fw pi-refresh'},
+          {label: 'Suggestions', icon: 'pi pi-fw pi-refresh'},
+          {label: 'Feedback', icon: 'pi pi-fw pi-refresh'},
         ]
       }
     ];
