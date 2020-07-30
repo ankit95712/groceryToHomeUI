@@ -58,9 +58,10 @@
     }
   }
 }
-body
-{
+.allcards {
 background:skyblue;
+display: flex;
+justify-content: space-evenly;
 }
 .wrap
 {
@@ -69,9 +70,10 @@ margin:auto;
 margin-top:100px;
 }
 .card{
+color: black;
 box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
 transition:0.4s;
-width:100px;
+width:100%;
 background:#fff;
 text-align:center;
 font-size:15px;
@@ -81,6 +83,7 @@ margin:9px;
 }
 .card:hover{
 box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+color: red
 }
 .container{
 padding:2px 16px;

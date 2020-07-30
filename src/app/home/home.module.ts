@@ -5,10 +5,11 @@ import {HomeComponent} from './home.component';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FormComponent } from './form/form.component';
 
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, FormComponent],
   imports: [
     CommonModule,
     MenubarModule,
