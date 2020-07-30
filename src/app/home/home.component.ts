@@ -61,11 +61,11 @@ export class HomeComponent implements OnInit {
         label: 'About Us',
         icon: 'fa fa-info-circle',
         items: [
-          {label: 'About', icon: 'pi pi-fw pi-trash'},
-          {label: 'Contact', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Complains', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Suggestions', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Feedback', icon: 'pi pi-fw pi-refresh'},
+          {label: 'About', icon: 'fa fa-user'},
+          {label: 'Contact', icon: 'fa fa-address-card-o'},
+          {label: 'Complains', icon: 'fa fa-bug'},
+          {label: 'Suggestions', icon: 'fa fa-question'},
+          {label: 'Feedback', icon: 'fa fa-comments'},
         ]
       }
     ];
