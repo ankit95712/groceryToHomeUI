@@ -7,6 +7,7 @@ import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormComponent } from './form/form.component';
 import {AboutUsModule} from "./about-us/about-us.module";
+import {SharedModule} from "./shared/shared.module";
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import {AboutUsModule} from "./about-us/about-us.module";
     BrowserAnimationsModule,
     FormsModule,
     AboutUsModule,
+    SharedModule
   ],
   exports: [
     HomeComponent
