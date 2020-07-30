@@ -16,6 +16,14 @@ describe('BasicCardsComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(BasicCardsComponent);
     component = fixture.componentInstance;
+    component.basicCardDetails = {
+      header: 'Orange',
+      imageUrl: 'assets/download.jpg',
+      quantity: 2,
+      metrics: 'kg',
+      marketPrice: 30,
+      price: 20
+    };
     fixture.detectChanges();
   });
 

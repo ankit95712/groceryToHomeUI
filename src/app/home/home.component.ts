@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MenuItem} from 'primeng/api';
-import {BasicCardModel} from "./shared/basic-cards/basic-card.model";
+import {BasicCardModel} from './shared/basic-cards/basic-card.model';
 
 @Component({
   selector: 'app-home',
@@ -62,11 +62,11 @@ export class HomeComponent implements OnInit {
         label: 'About Us',
         icon: 'fa fa-info-circle',
         items: [
-          {label: 'About', icon: 'fa fa-user'},
-          {label: 'Contact', icon: 'fa fa-address-card-o'},
-          {label: 'Complains', icon: 'fa fa-bug'},
-          {label: 'Suggestions', icon: 'fa fa-question'},
-          {label: 'Feedback', icon: 'fa fa-comments'},
+          {label: 'About', icon: 'fa fa-user', url: 'home/aboutUs'},
+          {label: 'Contact', icon: 'fa fa-address-card-o', url: 'home/contact'},
+          {label: 'Complains', icon: 'fa fa-bug', url: 'home/complaint'},
+          {label: 'Suggestions', icon: 'fa fa-question', url: 'home/suggestions'},
+          {label: 'Feedback', icon: 'fa fa-comments', url: 'home/feedback'},
         ]
       }
     ];
@@ -112,7 +112,7 @@ export class HomeComponent implements OnInit {
         marketPrice: 30,
         price: 20
       },
-    ]
+    ];
   }
 }
 
