@@ -3,60 +3,8 @@
   <p-menubar [model]="items" class="header-menu"></p-menubar>
 </div>
 
-<app-basic-cards></app-basic-cards>
-
-<div class="allcards">
-  <div class="wrap card">
-    <div>Orange</div>
-    <img src="assets/download.jpg" alt="download" style="width:90%" height="100">
-    <div>
-      <div>Quantity: 2kg</div>
-      <div>Market Price: 30rs</div>
-      <div>Price: 20rs</div>
-    </div>
-
-
-  </div>
-  <div class="wrap card">
-    <img src="assets/banana.jpg" alt="banana" style="width:90%" height="100">
-
-    <div class="container">
-      <h5><b> banana</b></h5>
-    </div>
-
-
-  </div>
-  <div class="wrap card">
-    <img src="assets/grapes.jpg" alt="download" style="width:90%" height="100">
-
-
-    <div class="container">
-      <h5><b> Grapes</b></h5>
-    </div>
-  </div>
-
-  <div class="wrap card">
-    <img src="assets/kiwi.jpg" alt="download" style="width:90%" height="100">
-
-
-    <div class="container">
-      <h5><b> Kiwi</b></h5>
-    </div>
-  </div>
-  <div class="wrap card">
-    <img src="assets/apple.jpg" alt="download" style="width:90%" height="110">
-
-
-    <div class="container">
-      <h5><b> Apple</b></h5>
-    </div>
+<div class="products">
+  <div *ngFor="let product of products">
+    <app-basic-cards [basicCardDetails]="product"></app-basic-cards>
   </div>
 </div>
-
-
-
-
-
-
-
-
