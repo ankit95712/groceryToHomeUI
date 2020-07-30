@@ -6,6 +6,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormComponent } from './form/form.component';
+import {AboutUsModule} from "./about-us/about-us.module";
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { FormComponent } from './form/form.component';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    AboutUsModule,
   ],
   exports: [
     HomeComponent
