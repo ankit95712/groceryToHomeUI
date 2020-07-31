@@ -11,7 +11,6 @@ import {basicCardData} from './stubs/basicCard.stubs';
 export class HomeComponent implements OnInit {
 
   items: MenuItem[];
-  products: BasicCardModel[];
 
   constructor() {
   }
@@ -20,16 +19,9 @@ export class HomeComponent implements OnInit {
     this.items = [
       {
         label: 'Home',
-        items: [{
-          label: 'New',
-          icon: 'pi pi-fw pi-plus',
-          items: [
-            {label: 'Project', url: 'http://www.primefaces.org/primeng'},
-            {label: 'Other', url: 'login'},
-          ]
-        },
-          {label: 'Open'},
-          {label: 'Quit'}
+        icon: 'pi pi-home',
+        items: [
+          {label: 'Landing Page', icon: 'pi pi-home', url: 'home/landingPage'}
         ]
       },
       {
@@ -71,8 +63,6 @@ export class HomeComponent implements OnInit {
         ]
       }
     ];
-
-    this.products = basicCardData;
   }
 }
 

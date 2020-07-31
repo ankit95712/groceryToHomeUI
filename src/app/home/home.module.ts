@@ -8,10 +8,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormComponent } from './form/form.component';
 import {AboutUsModule} from './about-us/about-us.module';
 import {SharedModule} from './shared/shared.module';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, FormComponent],
+  declarations: [HomeComponent, FormComponent, LandingPageComponent],
   imports: [
     CommonModule,
     MenubarModule,
@@ -19,7 +20,7 @@ import {SharedModule} from './shared/shared.module';
     BrowserAnimationsModule,
     FormsModule,
     AboutUsModule,
-    SharedModule
+    SharedModule,
   ],
   exports: [
     HomeComponent
