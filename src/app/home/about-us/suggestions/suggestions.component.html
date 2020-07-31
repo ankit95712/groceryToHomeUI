@@ -1,1 +1,8 @@
-<p>suggestions works!</p>
+<div class="header">Suggestions</div>
+
+<div class="container">
+  <input type="text" pInputText [(ngModel)]="place" class="place-of-complaint" placeholder="Place were suggestion is for">
+  <textarea class="description" pInputTextarea [(ngModel)]="suggestion"
+            placeholder="Describe the improvement or new feature you want to have"></textarea>
+  <button pButton type="button" label="Submit" class="ui-button-rounded ui-button-info"></button>
+</div>

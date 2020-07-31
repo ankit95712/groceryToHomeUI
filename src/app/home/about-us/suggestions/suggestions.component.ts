@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-suggestions',
@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SuggestionsComponent implements OnInit {
 
-  constructor() { }
+  public place: string;
+  public suggestion: string;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

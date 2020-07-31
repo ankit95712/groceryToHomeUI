@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ComplainDetailModel} from "./complain-detail.model";
-import {complainDetails} from "../../stubs/complainDetails.stubs";
+import {ComplainDetailModel} from './complain-detail.model';
+import {complainDetails} from '../../stubs/complainDetails.stubs';
 
 @Component({
   selector: 'app-complaint',

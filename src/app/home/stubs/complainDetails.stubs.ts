@@ -1,4 +1,4 @@
-import {ComplainDetailModel} from "../about-us/complaint/complain-detail.model";
+import {ComplainDetailModel} from '../about-us/complaint/complain-detail.model';
 
 export let complainDetails: ComplainDetailModel[] = [
   {
