@@ -1,5 +1,26 @@
-<div class="products">
-  <div *ngFor="let product of products">
-    <app-basic-cards [basicCardDetails]="product"></app-basic-cards>
+<div class="landing-page">
+  <div class="header-type">Recently Edited</div>
+  <div class="products">
+    <div *ngFor="let product of products">
+      <app-basic-cards [basicCardDetails]="product"></app-basic-cards>
+    </div>
+  </div>
+  <div class="header-type">Most Sold</div>
+  <div class="products">
+    <div *ngFor="let product of products">
+      <app-basic-cards [basicCardDetails]="product"></app-basic-cards>
+    </div>
+  </div>
+  <div class="header-type">Least Sold</div>
+  <div class="products">
+    <div *ngFor="let product of products">
+      <app-basic-cards [basicCardDetails]="product"></app-basic-cards>
+    </div>
+  </div>
+  <div class="header-type">Products</div>
+  <div class="products">
+    <div *ngFor="let product of products">
+      <app-basic-cards [basicCardDetails]="product"></app-basic-cards>
+    </div>
   </div>
 </div>

@@ -41,5 +41,28 @@ export let basicCardData: BasicCardModel[] =
       metrics: 'kg',
       marketPrice: 30,
       price: 20
+    }, {
+      header: 'Grapes',
+      imageUrl: 'assets/grapes.jpg',
+      quantity: 5,
+      metrics: 'kg',
+      marketPrice: 30,
+      price: 20
+    },
+    {
+      header: 'Kiwi',
+      imageUrl: 'assets/kiwi.jpg',
+      quantity: 3,
+      metrics: 'kg',
+      marketPrice: 30,
+      price: 20
+    },
+    {
+      header: 'Apple',
+      imageUrl: 'assets/apple.jpg',
+      quantity: 10,
+      metrics: 'kg',
+      marketPrice: 30,
+      price: 20
     },
   ];
