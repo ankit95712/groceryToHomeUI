@@ -1,1 +1,32 @@
-<p>complaint works!</p>
+<div class="header">Complaint Box</div>
+
+<div class="complaint">
+  <p-accordion>
+    <p-accordionTab header="Some thing is not working in the app. As should work.">
+      <div class="complaint-box">
+        <textarea class="description" pInputTextarea [(ngModel)]="complainForBugs" placeholder="Describe the issue here"></textarea>
+        <div class="side-panel">
+          <input type="text" pInputText [(ngModel)]="feature" class="place-of-complaint" placeholder="Feature name">
+          <button pButton type="button" label="Submit" class="ui-button-rounded ui-button-info"></button>
+        </div>
+      </div>
+    </p-accordionTab>
+    <p-accordionTab header="There is some data issue needs fix.">
+      <div class="complaint-box">
+        <textarea class="description" pInputTextarea [(ngModel)]="complainForData" placeholder="Describe the issue here"></textarea>
+        <div class="side-panel-only-button">
+          <button pButton type="button" label="Submit" class="ui-button-rounded ui-button-info"></button>
+        </div>
+      </div>
+    </p-accordionTab>
+    <p-accordionTab header="The UI is broken and not looking good.">
+      <div class="complaint-box">
+        <textarea class="description" pInputTextarea [(ngModel)]="complainForUI" placeholder="Describe the issue here"></textarea>
+        <div class="side-panel">
+          <input type="text" pInputText [(ngModel)]="url" class="place-of-complaint" placeholder="Page having issue">
+          <button pButton type="button" label="Submit" class="ui-button-rounded ui-button-info"></button>
+        </div>
+      </div>
+    </p-accordionTab>
+  </p-accordion>
+</div>
