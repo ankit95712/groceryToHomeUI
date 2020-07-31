@@ -4,7 +4,8 @@
   <p-accordion>
     <p-accordionTab header="Some thing is not working in the app. As should work.">
       <div class="complaint-box">
-        <textarea class="description" pInputTextarea [(ngModel)]="complainForBugs" placeholder="Describe the issue here"></textarea>
+        <textarea class="description" pInputTextarea [(ngModel)]="complainForBugs"
+                  placeholder="Describe the issue here"></textarea>
         <div class="side-panel">
           <input type="text" pInputText [(ngModel)]="feature" class="place-of-complaint" placeholder="Feature name">
           <button pButton type="button" label="Submit" class="ui-button-rounded ui-button-info"></button>
@@ -13,7 +14,8 @@
     </p-accordionTab>
     <p-accordionTab header="There is some data issue needs fix.">
       <div class="complaint-box">
-        <textarea class="description" pInputTextarea [(ngModel)]="complainForData" placeholder="Describe the issue here"></textarea>
+        <textarea class="description" pInputTextarea [(ngModel)]="complainForData"
+                  placeholder="Describe the issue here"></textarea>
         <div class="side-panel-only-button">
           <button pButton type="button" label="Submit" class="ui-button-rounded ui-button-info"></button>
         </div>
@@ -21,7 +23,8 @@
     </p-accordionTab>
     <p-accordionTab header="The UI is broken and not looking good.">
       <div class="complaint-box">
-        <textarea class="description" pInputTextarea [(ngModel)]="complainForUI" placeholder="Describe the issue here"></textarea>
+        <textarea class="description" pInputTextarea [(ngModel)]="complainForUI"
+                  placeholder="Describe the issue here"></textarea>
         <div class="side-panel">
           <input type="text" pInputText [(ngModel)]="url" class="place-of-complaint" placeholder="Page having issue">
           <button pButton type="button" label="Submit" class="ui-button-rounded ui-button-info"></button>
@@ -29,4 +32,28 @@
       </div>
     </p-accordionTab>
   </p-accordion>
+</div>
+
+
+<div>
+  <div class="header">Complains</div>
+  <div *ngFor="let complain of complainDetails">
+    <div class="card">
+      <div class="about-complaint">
+        <div class="content">
+          <div class="label">Complain Type:</div>
+          <div class="value">{{complain.type}}</div>
+        </div>
+        <div class="content">
+          <div class="label">Complain description:</div>
+          <div class="value">{{complain.description}}</div>
+        </div>
+      </div>
+      <div class="complain-info">
+        <div class="user">{{complain.complainer}}</div>
+        <div class="time">{{complain.date}}</div>
+      </div>
+      <div class="progress"><img [src]="images[complain.progress]" height="75"/></div>
+    </div>
+  </div>
 </div>

@@ -46,3 +46,38 @@
     height: 150px;
   }
 }
+
+.card {
+  border: 1px solid grey;
+  padding: 10px;
+  margin: 5px 20px;
+  height: 100px;
+  border-radius: 25px;
+  display: flex;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+
+  .about-complaint {
+    flex-basis: 90%;
+
+    .content {
+      display: flex;
+      padding: 4px;
+
+      .label {
+        flex-basis: 15%;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .complain-info {
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .progress {
+    flex-basis: 5%;
+  }
+}
