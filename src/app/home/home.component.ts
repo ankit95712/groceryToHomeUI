@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
         label: 'Profile',
         icon: 'fa fa-user',
         items: [
-          {label: 'Change Password', icon: 'fa fa-user', url: ''},
+          {label: 'Change Password', icon: 'fa fa-user', url: '/createPassword'},
         ]
       }
     ];
