@@ -1,4 +1,4 @@
-<div class="registrationform"><h1>Fruit Name</h1></div>
+<div class="registrationform"><h1>{{details.header}}</h1></div>
 <div class="Fruit Name">
   <form>
     <table>
@@ -7,7 +7,7 @@
           Name:
         </td>
         <td>
-          <input type="text" placeholder="Name" name="">
+          <input type="text" [placeholder]="details.header" [value]="details.header" name="" disabled>
         </td>
       </tr>
       <tr>
@@ -29,7 +29,7 @@
           Market Price:
         </td>
         <td>
-          <input type="text" name="">
+          <input type="text" name=""/>
         </td>
       </tr>
       <tr>

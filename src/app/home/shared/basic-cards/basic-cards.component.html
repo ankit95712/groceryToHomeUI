@@ -1,4 +1,8 @@
-<div class="card">
+<p-sidebar [(visible)]="display" styleClass="sidebar-style">
+  <app-form [details]="basicCardDetails"></app-form>
+</p-sidebar>
+
+<div class="card" (click)="display = true">
   <div class="card-header">{{basicCardDetails.header}}</div>
   <img [src]="basicCardDetails.imageUrl" alt="download" style="width:100%" height="150" class="card-image">
 
