@@ -1,7 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {MenuItem} from 'primeng/api';
-import {BasicCardModel} from './shared/basic-cards/basic-card.model';
-import {basicCardData} from './stubs/basicCard.stubs';
 
 @Component({
   selector: 'app-home',
@@ -42,13 +40,9 @@ export class HomeComponent implements OnInit {
         label: 'Services',
         icon: 'fa fa-cogs',
         items: [
-          {label: 'Vegetables', icon: 'pi pi-fw pi-trash'},
-          {label: 'Snacks', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Gourmet', icon: 'pi pi-fw pi-trash'},
-          {label: 'Dairy', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Fruits', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Beverages', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Branded items', icon: 'pi pi-fw pi-refresh'}
+          {label: 'Home Delivery', icon: ''},
+          {label: 'Pre Packing', icon: ''},
+          {label: 'Cashless payment', icon: 'fa fa-credit-card'},
         ]
       },
       {
@@ -60,6 +54,13 @@ export class HomeComponent implements OnInit {
           {label: 'Complains', icon: 'fa fa-bug', url: 'home/complaint'},
           {label: 'Suggestions', icon: 'fa fa-question', url: 'home/suggestions'},
           {label: 'Feedback', icon: 'fa fa-comments', url: 'home/feedback'},
+        ]
+      },
+      {
+        label: 'Profile',
+        icon: 'fa fa-user',
+        items: [
+          {label: 'Change Password', icon: 'fa fa-user', url: ''},
         ]
       }
     ];

@@ -5,6 +5,12 @@
       <app-basic-cards [basicCardDetails]="product"></app-basic-cards>
     </div>
   </div>
+  <div class="header-type">Out Of Stock</div>
+  <div class="products">
+    <div *ngFor="let product of products">
+      <app-basic-cards [basicCardDetails]="product"></app-basic-cards>
+    </div>
+  </div>
   <div class="header-type">Most Sold</div>
   <div class="products">
     <div *ngFor="let product of products">
@@ -12,12 +18,6 @@
     </div>
   </div>
   <div class="header-type">Least Sold</div>
-  <div class="products">
-    <div *ngFor="let product of products">
-      <app-basic-cards [basicCardDetails]="product"></app-basic-cards>
-    </div>
-  </div>
-  <div class="header-type">Products</div>
   <div class="products">
     <div *ngFor="let product of products">
       <app-basic-cards [basicCardDetails]="product"></app-basic-cards>
