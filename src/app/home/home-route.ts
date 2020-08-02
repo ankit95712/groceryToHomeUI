@@ -7,6 +7,7 @@ import {LandingPageComponent} from './landing-page/landing-page.component';
 import {Routes} from '@angular/router';
 
 export let homeChildRoute: Routes = [
+  {path:'', redirectTo: 'landingPage', pathMatch: 'full'},
   {path: 'landingPage', component: LandingPageComponent},
   {path: 'aboutUs', component: AboutComponent},
   {path: 'contact', component: ContactComponent},

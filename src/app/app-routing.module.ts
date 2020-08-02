@@ -10,6 +10,11 @@ import {CreatePasswordComponent} from "./login/create-password/create-password.c
 const homeChildren = homeChildRoute.concat({path: 'createPassword', component: CreatePasswordComponent});
 
 const routes: Routes = [
+  {
+    path:'',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
   {path: 'login', component: LoginComponent},
   {path: 'changePassword', component: ForgotPasswordComponent},
   {
