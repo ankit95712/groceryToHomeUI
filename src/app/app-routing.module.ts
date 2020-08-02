@@ -7,12 +7,13 @@ import {ForgotPasswordComponent} from './login/forgot-password/forgot-password.c
 import {homeChildRoute} from './home/home-route';
 import {CreatePasswordComponent} from "./login/create-password/create-password.component";
 
+const homeChildren = homeChildRoute.concat({path: 'createPassword', component: CreatePasswordComponent});
+
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'changePassword', component: ForgotPasswordComponent},
-  {path: 'createPassword', component: CreatePasswordComponent},
   {
-    path: 'home', component: HomeComponent, children: homeChildRoute
+    path: 'home', component: HomeComponent, children: homeChildren
   },
   {path: 'form', component: FormComponent}
 ];

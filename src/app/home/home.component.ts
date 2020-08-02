@@ -26,13 +26,18 @@ export class HomeComponent implements OnInit {
         label: 'Products',
         icon: 'fa fa-product-hunt',
         items: [
-          {label: 'Vegetables', icon: 'pi pi-fw pi-trash'},
-          {label: 'Snacks', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Gourmet', icon: 'pi pi-fw pi-trash'},
-          {label: 'Dairy', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Fruits', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Beverages', icon: 'pi pi-fw pi-refresh'},
-          {label: 'Branded items', icon: 'pi pi-fw pi-refresh'},
+          {label: 'Fruits and Vegetables'},
+          {label: 'Foodgrains, Oil & Masala'},
+          {label: 'Bakery, Cakes & Dairy'},
+          {label: 'Beverages'},
+          {label: 'Snacks & Branded Foods'},
+          {label: 'Beverages'},
+          {label: 'Beauty & Hygiene'},
+          {label: 'Cleaning & Household'},
+          {label: 'Kitchen, Garden & Pets'},
+          {label: 'Eggs, Meat & Fish'},
+          {label: 'Gourmet & World Food'},
+          {label: 'Baby Care'},
 
         ]
       },
@@ -60,7 +65,7 @@ export class HomeComponent implements OnInit {
         label: 'Profile',
         icon: 'fa fa-user',
         items: [
-          {label: 'Change Password', icon: 'fa fa-user', url: '/createPassword'},
+          {label: 'Change Password', icon: 'fa fa-user', url: 'home/createPassword'},
         ]
       }
     ];
