@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {BasicCardModel} from "../basic-cards/basic-card.model";
 
 @Component({
@@ -9,10 +9,15 @@ import {BasicCardModel} from "../basic-cards/basic-card.model";
 export class FormComponent implements OnInit {
 
   @Input() details: BasicCardModel;
+  @Output() closeForm: EventEmitter<any> = new EventEmitter();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  submitForm(): void {
+    this.closeForm.emit();
   }
 
 }

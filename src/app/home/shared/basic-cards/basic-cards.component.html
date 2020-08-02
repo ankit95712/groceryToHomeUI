@@ -1,5 +1,7 @@
 <p-sidebar [(visible)]="display" styleClass="sidebar-style">
-  <app-form [details]="basicCardDetails"></app-form>
+  <app-form [details]="basicCardDetails"
+            (closeForm)="closeForm()">
+  </app-form>
 </p-sidebar>
 
 <div class="card" (click)="display = true" [ngClass]="backGround">

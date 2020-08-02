@@ -7,6 +7,7 @@ import {BrowserModule} from "@angular/platform-browser";
 import {FormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { AddItemCardComponent } from './add-item-card/add-item-card.component';
+import {ButtonModule} from "primeng/button";
 
 
 
@@ -17,7 +18,8 @@ import { AddItemCardComponent } from './add-item-card/add-item-card.component';
     BrowserModule,
     SidebarModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ButtonModule,
   ],
   exports: [
     BasicCardsComponent, AddItemCardComponent

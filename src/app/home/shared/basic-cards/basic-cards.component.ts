@@ -17,4 +17,8 @@ export class BasicCardsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  closeForm() {
+    this.display = false;
+  }
+
 }
