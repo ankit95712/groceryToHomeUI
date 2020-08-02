@@ -4,7 +4,23 @@
   width: 240px;
   min-height: 300px;
   margin: 15px;
-  border-radius: 25px;
+  border-radius: 0 25px 0 25px;
+}
+
+.gradientBlue {
+  background: radial-gradient(blue, transparent);
+}
+
+.aliceBlue {
+  background: aliceblue;
+}
+
+.cadetBlue {
+  background: cadetblue;
+}
+
+.greenBack {
+  background: green;
 }
 
 .card:hover {
@@ -31,13 +47,15 @@
 }
 
 .card-header {
-  font-size: 18px;
-  font-weight: bold;
+  height: 40px;
   display: flex;
-  justify-content: center;
-  padding: 5px;
-  background: limegreen;
-  border-radius: 25px 25px 0 0;
+  background: black;
+  background: -webkit-linear-gradient(left,rgba(0,0,0,0.8) 0,rgba(0,0,0,0.15) 40%,rgba(0,0,0,0) 70%);
+  color: white;
+  width: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
 }
 
 .card-details {

@@ -10,6 +10,7 @@ export class BasicCardsComponent implements OnInit {
   display: boolean = false;
 
   @Input() basicCardDetails: BasicCardModel;
+  @Input() backGround: string;
 
   constructor() { }
 

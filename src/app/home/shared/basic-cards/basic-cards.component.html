@@ -2,7 +2,7 @@
   <app-form [details]="basicCardDetails"></app-form>
 </p-sidebar>
 
-<div class="card" (click)="display = true">
+<div class="card" (click)="display = true" [ngClass]="backGround">
   <div class="card-header">{{basicCardDetails.header}}</div>
   <img [src]="basicCardDetails.imageUrl" alt="download" style="width:100%" height="150" class="card-image">
 
