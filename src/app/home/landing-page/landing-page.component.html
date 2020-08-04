@@ -1,7 +1,7 @@
 <div class="landing-page">
   <div class="header-type">Recently Edited</div>
   <div class="products">
-    <app-add-item-card></app-add-item-card>
+    <app-add-item-card class="add-card"></app-add-item-card>
     <div *ngFor="let product of products">
       <app-basic-cards [basicCardDetails]="product" [backGround]="'greenBack'"></app-basic-cards>
     </div>
