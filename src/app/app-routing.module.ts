@@ -5,13 +5,13 @@ import {HomeComponent} from './home/home.component';
 import {FormComponent} from './home/shared/form/form.component';
 import {ForgotPasswordComponent} from './login/forgot-password/forgot-password.component';
 import {homeChildRoute} from './home/home-route';
-import {CreatePasswordComponent} from "./login/create-password/create-password.component";
+import {CreatePasswordComponent} from './login/create-password/create-password.component';
 
 const homeChildren = homeChildRoute.concat({path: 'createPassword', component: CreatePasswordComponent});
 
 const routes: Routes = [
   {
-    path:'',
+    path: '',
     redirectTo: 'home',
     pathMatch: 'full'
   },

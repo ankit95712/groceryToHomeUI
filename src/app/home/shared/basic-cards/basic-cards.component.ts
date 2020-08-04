@@ -7,7 +7,7 @@ import {BasicCardModel} from './basic-card.model';
   styleUrls: ['./basic-cards.component.less']
 })
 export class BasicCardsComponent implements OnInit {
-  display: boolean = false;
+  display = false;
 
   @Input() basicCardDetails: BasicCardModel;
   @Input() backGround: string;

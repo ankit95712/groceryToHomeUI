@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {BasicCardModel} from "../basic-cards/basic-card.model";
+import {BasicCardModel} from '../basic-cards/basic-card.model';
 
 @Component({
   selector: 'app-form',

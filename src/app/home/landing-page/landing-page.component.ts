@@ -23,7 +23,7 @@ export class LandingPageComponent implements OnInit {
       metrics: 'kg',
       marketPrice: 30,
       price: 20
-    }
+    };
   }
 
 }
