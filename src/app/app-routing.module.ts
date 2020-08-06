@@ -12,7 +12,7 @@ const homeChildren = homeChildRoute.concat({path: 'createPassword', component: C
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {path: 'login', component: LoginComponent},

@@ -31,13 +31,10 @@ export class LoginComponent {
   }
 
   login(): void {
-    this.loginService.login()
-      .subscribe((data: any) => console.log(data));
-
     if (!!this.username && !!this.password) {
-      this.error = '';
-      this.router.navigate(['/home', {}]);
-    } else {
+      this.loginService.login(this.username, this.password)
+        .subscribe((data: any) => this.router.navigate(['/home', data]));
+      } else {
       this.messageService.add({severity: 'error', summary: 'Login Failed', detail: 'Both User name and Password is required'});
     }
   }
