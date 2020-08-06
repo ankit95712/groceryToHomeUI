@@ -1,12 +1,13 @@
 import {MessageService} from 'primeng/api';
 import {Component, EventEmitter, Output} from '@angular/core';
 import {Router} from '@angular/router';
+import {LoginService} from '../services/login.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  providers: [MessageService]
+  providers: [MessageService, LoginService]
 })
 export class LoginComponent {
   @Output() goToHome: EventEmitter<any> = new EventEmitter();
@@ -16,8 +17,9 @@ export class LoginComponent {
   error: string;
   forgotPass = false;
 
-  constructor(private messageService: MessageService,
-              private router: Router ) {
+  constructor(private loginService: LoginService,
+              private messageService: MessageService,
+              private router: Router) {
   }
 
   forgotPassword(): void {
@@ -29,6 +31,9 @@ export class LoginComponent {
   }
 
   login(): void {
+    this.loginService.login()
+      .subscribe((data: any) => console.log(data));
+
     if (!!this.username && !!this.password) {
       this.error = '';
       this.router.navigate(['/home', {}]);

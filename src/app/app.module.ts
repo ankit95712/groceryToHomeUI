@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {LoginModule} from './login/login.module';
 import {HomeModule} from './home/home.module';
 import {AppRoutingModule} from './app-routing.module';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import {AppRoutingModule} from './app-routing.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     LoginModule,
     HomeModule,
