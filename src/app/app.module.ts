@@ -7,10 +7,12 @@ import {LoginModule} from './login/login.module';
 import {HomeModule} from './home/home.module';
 import {AppRoutingModule} from './app-routing.module';
 import {HttpClientModule} from '@angular/common/http';
+import { RegistrationFormComponent } from './registration-form/registration-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegistrationFormComponent
   ],
   imports: [
     BrowserModule,
